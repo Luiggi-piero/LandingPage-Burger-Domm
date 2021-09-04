@@ -171,3 +171,10 @@ main {
         top: 0;
     }
 }
+
+.waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
