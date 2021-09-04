@@ -1,0 +1,163 @@
+.contentBx {
+    position: fixed;
+    top: 100%;
+    right: 0;
+    display: flex;
+    /* alineamiento horizontal */
+    justify-content: center;
+    /* alineamiento vertical */
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    transition: 1s;
+    background: rgb(238 238 238 / 70%);
+}
+
+.contentBx.active {
+    top: 0;
+}
+
+.contentBx .formBx {
+    width: 50%;
+}
+
+.contentBx .formBx .title {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.contentBx .formBx h2 {
+    color: #e91e63;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    /* border-bottom: 4px solid #607d8b; */
+}
+
+.contentBx .formBx .inputBx {
+    margin-bottom: 20px;
+}
+
+.contentBx .formBx .inputBx span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #222831;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.contentBx .formBx .inputBx input {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid #607d8b;
+    letter-spacing: 1px;
+    color: #222831;
+    background: transparent;
+    border-radius: 30px;
+}
+
+.contentBx .formBx .inputBx .login {
+    /* justify-content: space-between;
+    align-items: center; */
+    width: 100%;
+}
+
+.contentBx .formBx .inputBx input[type="button"] {
+    /* text-align: center; */
+    background: #e91e63;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    font-weight: 500;
+    width: 50%;
+    position: relative;
+    left: 24%;
+}
+
+.contentBx .formBx .inputBx input[type="button"]:hover {
+    background: #b82d5b;
+}
+
+.contentBx .formBx h3 {
+    color: #607d8b;
+    text-align: center;
+    margin: 80px 0 10px;
+    font-weight: 500;
+}
+
+.contentBx .formBx .sci {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 70px;
+}
+
+.contentBx .formBx .sci li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 7px;
+    background: #222831;
+    box-shadow: 7px 7px 15px #592a08;
+}
+
+.contentBx .formBx .sci li:hover {
+    background: #e91e63;
+}
+
+.contentBx .formBx .sci li img {
+    width: 50px;
+    height: 50px;
+}
+
+.contentBx .formBx .sci li img {
+    transform: scale(0.5);
+    filter: invert(1);
+}
+
+
+/* -------------------Agradecimiento-------------------- */
+
+.thanks {
+    position: fixed;
+    top: 100%;
+    right: 0;
+    transition: 1s;
+    background: #e91e63;
+    display: flex;
+    /* alineamiento horizontal */
+    justify-content: center;
+    /* alineamiento vertical */
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+.thanks.active {
+    top: 0;
+}
+
+.thanks h2 {
+    color: #EEEEEE;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ---------x----------Agradecimiento-----------x--------- */

@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    background: #222831;
+    overflow-y: hidden;
+}
+
+@font-face {
+    font-family: road;
+    src: url('../fonts/Road_Rage.otf');
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* overflow: hidden; */
+}
+
+#box1 {
+    width: 560px;
+    height: 625px;
+    background-image: url('../img/burger-dark.png');
+    position: absolute;
+    bottom: -100%;
+    left: 30%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    animation: anim 2s forwards, anim2 3s forwards 3s;
+}
+
+#box1:after {
+    content: '';
+    position: absolute;
+    width: 560px;
+    height: 625px;
+    background-image: url('../img/burger-main.png');
+    object-fit: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+@keyframes anim {
+    from {
+        bottom: -100%;
+    }
+    to {
+        bottom: 0;
+    }
+}
+
+@keyframes anim2 {
+    from {
+        left: 30%;
+        width: 560px;
+    }
+    to {
+        width: 0;
+        left: 56%;
+    }
+}
+
+#box2 {
+    width: auto;
+    height: auto;
+    color: #EEEEEE;
+    font-size: 5em;
+    font-weight: 500;
+    line-height: 130px;
+    position: absolute;
+    top: 140px;
+    left: 100px;
+    overflow: hidden;
+}
+
+#text {
+    position: relative;
+    padding: 0 26px;
+    font-family: road;
+    left: -100%;
+    animation: anim3 2s forwards 3s;
+}
+
+#text .offer {
+    font-family: 'Poppins', sans-serif;
+    font-size: 100px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #e91e63;
+    margin: 0;
+}
+
+#text .btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    background: #444444;
+    color: #EEEEEE;
+    padding: 10px 18px;
+    text-decoration: none;
+    margin: 0;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    line-height: normal;
+}
+
+#text .info {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #EEEEEE;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+@keyframes anim3 {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0%;
+    }
+}
+
+#box3 {
+    overflow: hidden;
+}
+
+#container {
+    width: 100%;
+    position: absolute;
+    top: -100%;
+    animation: anim4 2s forwards 2.5s;
+}
+
+#logo {
+    float: left;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+#logo img {
+    width: 50px;
+}
+
+#menu {
+    font-size: 25px;
+    color: #EEEEEE;
+    letter-spacing: 1px;
+    margin-right: 150px;
+    margin-top: 20px;
+    float: right;
+}
+
+#menu ul {
+    list-style: none;
+}
+
+#menu ul li {
+    display: inline-block;
+    /* margin-left: 100px; */
+    font-family: road;
+}
+
+@keyframes anim4 {
+    from {
+        top: -100px;
+    }
+    to {
+        top: 0;
+    }
+}
